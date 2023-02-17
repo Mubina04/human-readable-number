@@ -33,15 +33,14 @@ const sayHundreds = (number) => {
     }
 }
 
-function toReadable(n){
-    if (n < 20) {
-        return sayOnes(n);
-    } else if (n >= 20 && n < 100) {
-        return sayTens(toArray(n));
-    } else if (n > 99 && n < 1000) {
-        return sayHundreds(n);
-    } else console.log('💥 Boom!')
-}
+
+if (number < 20) {
+    return sayOnes(number);
+} else if (number >= 20 && number < 100) {
+    return sayTens(toArray(n));
+} else if (number > 99 && number < 1000) {
+    return sayHundreds(number);
+} else console.log('💥 Boom!')
 
 // toReadable(231)
 }
